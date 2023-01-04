@@ -79,3 +79,19 @@ def et():
     t.goto(t.xcor()+6.07, t.ycor()+4.93)
     t.circle(-4, -270)
     t.goto(t.xcor()+9.83, t.ycor()-15.17)
+
+def left_bracket():
+    t.seth(180)
+    t.pu()
+    t.goto(t.xcor()+12, t.ycor()+24)
+    t.pd()
+    t.circle(6, 90)
+    t.goto(t.xcor(), t.ycor()-12)
+    t.circle(6, 90)
+
+def right_bracket():
+    t.circle(6, 90)
+    t.goto(t.xcor(), t.ycor()+12)
+    t.circle(6, 90)
+    t.pu()
+    t.goto(t.xcor()+12, t.ycor())
